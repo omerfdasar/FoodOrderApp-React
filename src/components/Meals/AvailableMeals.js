@@ -39,7 +39,7 @@ const AvailableMeals = () => {
       price={meal.price}
     />
   ));
-
+  // it can be also mapped in below
   return (
     <section className={classes.meals}>
       <Card>
