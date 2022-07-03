@@ -6,6 +6,7 @@ import CartItem from "./CartItem";
 import Checkout from "./Checkout";
 const Cart = (props) => {
   const [isCheckout, setIsCheckout] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const cartCtx = useContext(CartContext);
 
   const totalAmount = `$ ${cartCtx.totalAmount.toFixed(2)}`;
@@ -24,8 +25,10 @@ const Cart = (props) => {
     setIsCheckout(true);
   };
 
-  const submitOrderHandler = (userData) => {
-    fetch(
+  const submitOrderHandler = async (userData) => {
+    setIsSubmitting(true);
+    await fetch(
+      // Make error message later on
       "https://food-order-app-72b9e-default-rtdb.firebaseio.com/orders.json",
       {
         method: "POST",
