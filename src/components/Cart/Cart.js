@@ -86,15 +86,13 @@ const Cart = (props) => {
   );
   const isSubmittingModalContent = <p>Sending order data. Please Wait.</p>;
   const didSubmitModalContent = (
-    <p>
-      Succesfully sent the Order. You will be contacted once we prepare your
-      order.
-    </p>
+    <p>Succesfully sent. You will be contacted once we prepare your order.</p>
   );
   return (
     <Modal onClose={props.onClose}>
       {!isSubmitting && !didSubmit && cartModalContent}
       {/* if the process is not submitting and not submitted yet than show the normal cart modal content */}
+      {/* 5:51 */}
       {isSubmitting && isSubmittingModalContent}
       {!isSubmitting && didSubmit && didSubmitModalContent}
     </Modal>
