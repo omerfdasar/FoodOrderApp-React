@@ -86,7 +86,14 @@ const Cart = (props) => {
   );
   const isSubmittingModalContent = <p>Sending order data. Please Wait.</p>;
   const didSubmitModalContent = (
-    <p>Succesfully sent. You will be contacted once we prepare your order.</p>
+    <Fragment>
+      <p>Succesfully sent. You will be contacted once we prepare your order.</p>
+      <div className={classes.actions}>
+        <button className={classes.button} onClick={props.onClose}>
+          Close
+        </button>
+      </div>
+    </Fragment>
   );
   return (
     <Modal onClose={props.onClose}>
