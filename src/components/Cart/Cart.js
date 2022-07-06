@@ -41,6 +41,7 @@ const Cart = (props) => {
     );
     setIsSubmitting(false);
     setDidSubmit(true);
+    cartCtx.clearCart();
   };
 
   const cartItems = (
@@ -99,7 +100,7 @@ const Cart = (props) => {
     <Modal onClose={props.onClose}>
       {!isSubmitting && !didSubmit && cartModalContent}
       {/* if the process is not submitting and not submitted yet than show the normal cart modal content */}
-      {/* 5:51 */}
+
       {isSubmitting && isSubmittingModalContent}
       {!isSubmitting && didSubmit && didSubmitModalContent}
     </Modal>
