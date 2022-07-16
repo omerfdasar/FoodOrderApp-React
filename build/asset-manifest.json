@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/FoodOrderApp-React/static/css/main.5460e827.chunk.css",
+    "main.js": "/FoodOrderApp-React/static/js/main.5b4f12d0.chunk.js",
+    "main.js.map": "/FoodOrderApp-React/static/js/main.5b4f12d0.chunk.js.map",
+    "runtime-main.js": "/FoodOrderApp-React/static/js/runtime-main.d69856dd.js",
+    "runtime-main.js.map": "/FoodOrderApp-React/static/js/runtime-main.d69856dd.js.map",
+    "static/js/2.13d9c83a.chunk.js": "/FoodOrderApp-React/static/js/2.13d9c83a.chunk.js",
+    "static/js/2.13d9c83a.chunk.js.map": "/FoodOrderApp-React/static/js/2.13d9c83a.chunk.js.map",
+    "index.html": "/FoodOrderApp-React/index.html",
+    "static/css/main.5460e827.chunk.css.map": "/FoodOrderApp-React/static/css/main.5460e827.chunk.css.map",
+    "static/js/2.13d9c83a.chunk.js.LICENSE.txt": "/FoodOrderApp-React/static/js/2.13d9c83a.chunk.js.LICENSE.txt",
+    "static/media/meals.2971f633.jpg": "/FoodOrderApp-React/static/media/meals.2971f633.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d69856dd.js",
+    "static/js/2.13d9c83a.chunk.js",
+    "static/css/main.5460e827.chunk.css",
+    "static/js/main.5b4f12d0.chunk.js"
+  ]
+}
