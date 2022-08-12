@@ -3,7 +3,7 @@ import MealItem from "./MealItem/MealItem";
 import classes from "./AvailableMeals.module.css";
 import { useState, useEffect } from "react";
 
-const   AvailableMeals = () => {
+const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [httpError, setHttpError] = useState(null);
@@ -18,7 +18,7 @@ const   AvailableMeals = () => {
       }
 
       const responseData = await response.json();
-
+      console.log(responseData);
       const loadedMeals = [];
       for (const key in responseData) {
         loadedMeals.push({
