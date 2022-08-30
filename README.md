@@ -1,4 +1,4 @@
-Its a basic food delivery application made using React JS and powered by Firebase.
+Its a food delivery application made using React JS and powered by Firebase.
 
 This is a responsive web application for viewing in both Mobile and Desktop.
 
